@@ -12,7 +12,7 @@ class AddEmploye extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add Employe'),
+        title: Text('Add Employee'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(15),
@@ -79,9 +79,10 @@ class AddEmploye extends StatelessWidget {
                 ),
                 ElevatedButton(onPressed: (){
                   if(fromkey.currentState!.validate()){
-
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(SnackBar(content: Text("Employee Added")));
                   }
-                }, child: Text("Add Employe"))
+                }, child: Text("Add Employee"))
               ],
             )),
       )
