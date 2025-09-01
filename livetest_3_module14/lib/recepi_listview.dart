@@ -76,7 +76,11 @@ class _RecepiListviewState extends State<RecepiListview> {
           itemCount: recepiList.length,
         itemBuilder: (context, index) => ListTile(
           leading: Icon(Icons.restaurant_menu),
-          title: Text(recepiList[index].title),
+          title: Text(recepiList[index].title,style:
+          TextStyle(
+            fontSize: 20,
+              fontWeight: FontWeight.bold)
+          ),
           subtitle: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
