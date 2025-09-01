@@ -64,7 +64,7 @@ class _RecepiListviewState extends State<RecepiListview> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Food Recipes"),
+        title: Text("Food Recipes",style: TextStyle(color: Colors.white),),
         backgroundColor: Colors.blue,
       ),
       body: ListView.separated(
